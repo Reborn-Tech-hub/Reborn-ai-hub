@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Reborn Ai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    :root {
+      --accent: #d7263d;
+      --accent-dark: #b81d31;
+      --accent-soft: #fdecee;
+      --bg: #fbf6ee;
+      --sidebar-bg: #f5ede1;
+      --card: #fffdf9;
+      --border: #eadfd0;
+      --text: #2a2320;
+      --muted: #7a6f66;
+      --user-bubble: #f3e6d6;
+      --code-bg: #1e1b1a;
+      --code-head: #2d2928;
+      --code-text: #f4ece4;
+      --radius: 16px;
+      --topbar-h: 64px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      overflow: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+
+    /* ---------- Sidebar ---------- */
+    .sidebar {
+      width: 280px; flex: none; background: var(--sidebar-bg); border-right: 1px solid var(--border);
+      display: flex; flex-direction: column; height: 100dvh; z-index: 40; transition: transform .28s ease;
+    }
+    .sidebar-head { padding: 16px 14px 8px; display: flex; flex-direction: column; gap: 14px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800;
